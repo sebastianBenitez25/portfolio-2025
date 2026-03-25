@@ -11,6 +11,7 @@ import Html5 from "../icons/Html5.astro";
 import JavaScript from "../icons/JavaScript.astro";
 import Css from "../icons/Css.astro";
 import Sanity from "../icons/Sanity.astro";
+import Laravel from "../icons/Laravel.astro"
 const TAGS = {
   NEXT: {
     name: "Next.js",
@@ -57,6 +58,11 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Sanity,
   },
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-black text-white",
+    icon: Laravel,
+  },
 }
 const PROJECTS = [
   {
@@ -66,6 +72,14 @@ const PROJECTS = [
   link: "https://quadfinder.vercel.app/",
   image: "/images/quadFinder.png",
   tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MYSQL],
+},
+{
+  title: "JurassicDraft - Sistema de Draft de Equipos",
+  description:
+    "Sistema web fullstack desarrollado como proyecto de egreso del bachillerato en informática en UTU. Participé en el desarrollo del frontend, panel de administración y en la implementación de lógica de negocio del sistema, incluyendo validaciones y reglas del draft. Se desarrollaron funcionalidades como autenticación de usuarios, gestión de roles y manejo de relaciones en base de datos. La aplicación permite administrar participantes, registrar selecciones y generar resultados de forma automática. Construido con Laravel, MySQL y Tailwind CSS, aplicando buenas prácticas de desarrollo y arquitectura organizada.",
+    github: "https://github.com/JurassiCode/PROYECTO",
+  image: "/images/jurassidraft.png",
+  tags: [TAGS.LARAVEL, TAGS.MYSQL, TAGS.TAILWIND],
 },
   {
     title: "EntreFronterasRP - Servidor de Roleplay en FiveM",
